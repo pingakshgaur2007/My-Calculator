@@ -45,11 +45,11 @@ class my_window:
         self.entry3.place(x=305, y=420)
 
         # Placing our Buttons on our screen
-        self.button1.place(x=240, y=320)
-        self.button2.place(x=300, y=320)
-        self.button3.place(x=360, y=320)
-        self.button4.place(x=420, y=320)
-        self.button5.place(x=480, y=320)
+        self.button1.place(x=220, y=320)
+        self.button2.place(x=280, y=320)
+        self.button3.place(x=340, y=320)
+        self.button4.place(x=400, y=320)
+        self.button5.place(x=460, y=320)
 
     def add(self):
         self.entry3.delete(0, 'end')
@@ -91,6 +91,6 @@ window = Tk()
 
 my_win = my_window(window)
 
-window.title("My Calculator - Pingaksh Gaur")
+window.title("My Calculator")
 window.geometry("800x600")
 window.mainloop()
