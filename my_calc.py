@@ -7,10 +7,10 @@ class my_window:
         Creating our variables for our window
         '''
         # Creating our Labels to display our text on screen
-        self.label1 = Label(window, text="My Calculator",font="freesansbold 32")
-        self.label2 = Label(window, text="First Number",font="freesansbold 16")
-        self.label3 = Label(window, text="Second Number",font="freesansbold 16")
-        self.label4 = Label(window, text="Result", font="freesansbold 16")
+        self.label1 = Label(window, text="My Calculator",font="Calibri 32")
+        self.label2 = Label(window, text="First Number",font="Calibri 16")
+        self.label3 = Label(window, text="Second Number",font="Calibri 16")
+        self.label4 = Label(window, text="Result", font="Calibri 16")
 
         # Creating our Entries to type and see the result
         self.entry1 = Entry(bd=2, font="16")
@@ -18,15 +18,11 @@ class my_window:
         self.entry3 = Entry(bd=2, font="16")
 
         # Creating our Buttons for our window's functionality
-        self.button1 = Button(
-            window, text="+", font="freesansbold 16", command=self.add)
-        self.button2 = Button(window, text="-", font="freesansbold 16")
-        self.button3 = Button(
-            window, text="x", font="freesansbold 16", command=self.muiltiply)
-        self.button4 = Button(
-            window, text="/", font="freesansbold 16", command=self.divide)
-        self.button5 = Button(
-            window, text="^2", font="freesansbold 16", command=self.power)
+        self.button1 = Button(window, text="+", font="Calibri 16", command=self.add)
+        self.button2 = Button(window, text="-", font="Calibri 16")
+        self.button3 = Button(window, text="x", font="Calibri 16", command=self.muiltiply)
+        self.button4 = Button(window, text="/", font="Calibri 16", command=self.divide)
+        self.button5 = Button(window, text="^2", font="Calibri 16", command=self.power)
 
         self.button2.bind('<Button-1>', self.subtract)
 
